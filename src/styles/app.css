@@ -34,12 +34,12 @@ main {
 
 h1, h2, h3 {
   font-family: "Neucha", serif;
+  margin: 0;
   line-height: 1.2em;
   font-weight: 400;
 }
 
 h1 {
-  margin: 0;
   font-size: 72px;
 }
 
@@ -70,7 +70,7 @@ h3 {
 .section-inner {
   position: relative;
   margin: auto;
-  padding: 100px;
+  padding: 100px 0;
   max-width: 1110px;
 }
 
@@ -83,6 +83,10 @@ h3 {
 
 .basic {
   color: var(--basic);
+}
+
+.white {
+  color: var(--white)
 }
 
 .columns {
@@ -108,7 +112,64 @@ h3 {
   text-decoration: none;
 }
 
+.video {
+  padding-bottom: -84px;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
 .mb-0 {
   margin-bottom: 0;
 }
 
+.ta-center {
+  text-align: center;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.pt-200 {
+  padding-top: 200px;
+}
+
+#navigation {
+  margin-top: -200px;
+  background: var(--basic-dark);
+}
+
+.nav-menu {
+  display: flex;
+  row-gap: 20px;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: calc(1110px/3 - 20px);
+  padding: 24px;
+  box-sizing: border-box;
+  height: 300px;
+}
+
+.bg-bright {
+  background-color: var(--bright);
+}
+
+.fs-52 {
+  font-size: 52px;
+}
+
+.ff-neucha {
+  font-family: "Neucha", serif;
+}
+
+.pd-0 {
+  padding: 0;
+}
+
+.fd-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
