@@ -30,6 +30,7 @@ body {
 
 main {
   width: 1440px;
+  margin: auto;
 }
 
 h1, h2, h3 {
@@ -51,8 +52,14 @@ h3 {
   font-size: 34px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .section {
   position: relative;
+  background-color: var(--bright);
 }
 
 .section::before {
@@ -62,7 +69,6 @@ h3 {
   content: "";
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--brown);
   background-image: url("../assets/img/background.png");
   opacity: 0.1;
 }
@@ -78,7 +84,7 @@ h3 {
   position: absolute;
   height: 525px;
   top: 55px;
-  right: -165px;
+  right: -270px;
 }
 
 .basic {
@@ -86,7 +92,19 @@ h3 {
 }
 
 .white {
-  color: var(--white)
+  color: var(--white);
+}
+
+.secondary-white {
+  color: var(--secondary-white);
+}
+
+.secondary-dark {
+  color: var(--secondary-dark);
+}
+
+.brown {
+  color: var(--brown);
 }
 
 .columns {
@@ -121,12 +139,28 @@ h3 {
   margin-bottom: 0;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.m-none {
+  margin: 0;
+}
+
 .ta-center {
   text-align: center;
 }
 
+.mt-16 {
+  margin-top: 16px;
+}
+
 .mt-30 {
   margin-top: 30px;
+}
+
+.mt-100 {
+  margin-top: 100px;
 }
 
 .pt-200 {
@@ -149,11 +183,63 @@ h3 {
   width: calc(1110px/3 - 20px);
   padding: 24px;
   box-sizing: border-box;
-  height: 300px;
+}
+
+.nav-card {
+  padding: 24px;
+}
+
+.nav-card:hover{
+  background: var(--basic);
+}
+
+.nav-card:hover > * {
+  color: var(--white);
+}
+
+.number {
+  font-size: 64px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: 70px;
+}
+
+.distortion-block {
+  display: flex;
+  column-gap: 30px;
+}
+
+.distortions {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Neucha", serif;
+}
+
+.how-to {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.how-to-position{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.img-block {
+  vertical-align: middle;
 }
 
 .bg-bright {
   background-color: var(--bright);
+}
+
+.bg-brown {
+  background-color: var(--brown);
+}
+
+.bg-white {
+  background-color: var(--white);
 }
 
 .fs-52 {
