@@ -22,10 +22,10 @@
 }
 
 body {
-  font-family: "Open Sans", serif;
-  font-size: 16px;
-  line-height: 1.6em;
   color: var(--dark);
+  font-size: 16px;
+  font-family: "Open Sans", serif;
+  line-height: 1.6em;
 }
 
 main {
@@ -33,11 +33,13 @@ main {
   margin: auto;
 }
 
-h1, h2, h3 {
-  font-family: "Neucha", serif;
+h1,
+h2,
+h3 {
   margin: 0;
-  line-height: 1.2em;
   font-weight: 400;
+  font-family: Neucha, serif;
+  line-height: 1.2em;
 }
 
 h1 {
@@ -53,8 +55,8 @@ h3 {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .section {
@@ -67,24 +69,24 @@ a {
   width: 100%;
   height: 100%;
   content: "";
+  background-image: url("../assets/img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../assets/img/background.png");
   opacity: 0.1;
 }
 
 .section-inner {
   position: relative;
+  max-width: 1110px;
   margin: auto;
   padding: 100px 0;
-  max-width: 1110px;
 }
 
 .main-img {
   position: absolute;
-  height: 525px;
   top: 55px;
   right: -270px;
+  height: 525px;
 }
 
 .blue {
@@ -113,8 +115,8 @@ a {
 
 .columns {
   display: flex;
-  margin-top: 185px;
   gap: 30px;
+  margin-top: 185px;
 }
 
 .column {
@@ -128,15 +130,17 @@ a {
 }
 
 .btn-basic {
-  background-color: var(--basic);
-  font-weight: 700;
   color: var(--white);
+  font-weight: 700;
   text-decoration: none;
+  background-color: var(--basic);
 }
 
 .video {
   padding-bottom: -84px;
+  /* stylelint-disable */
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  /* stylelint-enable */
 }
 
 .mb-0 {
@@ -191,21 +195,21 @@ a {
 .nav-menu {
   display: flex;
   row-gap: 20px;
-  column-gap: 30px;
   flex-wrap: wrap;
+  column-gap: 30px;
 }
 
 .item {
-  width: calc(1110px/3 - 20px);
-  padding: 24px;
   box-sizing: border-box;
+  width: calc(1110px / 3 - 20px);
+  padding: 24px;
 }
 
 .nav-card {
   padding: 24px;
 }
 
-.nav-card:hover{
+.nav-card:hover {
   background: var(--basic);
 }
 
@@ -214,9 +218,9 @@ a {
 }
 
 .number {
-  font-size: 64px;
   margin-bottom: 40px;
   font-weight: 400;
+  font-size: 64px;
   line-height: 70px;
 }
 
@@ -226,17 +230,17 @@ a {
 }
 
 .distortions {
-  font-size: 24px;
   font-weight: 400;
-  font-family: "Neucha", serif;
+  font-size: 24px;
+  font-family: Neucha, serif;
 }
 
 .how-to {
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
 }
 
-.how-to-position{
+.how-to-position {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 10px;
@@ -244,7 +248,10 @@ a {
 
 .img-block {
   vertical-align: middle;
-  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+
+  /* stylelint-disable */
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  /* stylelint-enable */
 }
 
 .bg-basic {
@@ -280,7 +287,7 @@ a {
 }
 
 .ff-neucha {
-  font-family: "Neucha", serif;
+  font-family: Neucha, serif;
 }
 
 .pd-0 {
@@ -326,8 +333,8 @@ a {
   box-sizing: border-box;
 }
 
-input::placeholder{
-  color: #757575
+input::placeholder {
+  color: #757575;
 }
 
 .td-u {
